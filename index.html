@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Plants Vs. Zombie 2</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="navbar shadow navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><img src="/assets/logo-zombie.png" alt="logo" width="100"
+            height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active mx-4" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn rounded-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-regular fa-comment-dots fs-5 px-2"></i>
+                Send Feedback
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Modal Pop-Up Feedback -->
+  <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header px-4">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Send Feedback
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control pb-3 mb-2" id="fullname" placeholder="Full Name" />
+          <input type="email" class="form-control pb-3 mb-2" id="email" placeholder="E-Mail" />
+          <input type="number" class="form-control pb-3 mb-2" id="phone-number" placeholder="Phone Number" />
+          <textarea class="form-control" id="exampletextarea" rows="5" placeholder="Your Feedback"></textarea>
+        </div>
+        <div class="modal-footer ms-2">
+          <button type="button" class="btn col-12 rounded-5 btn-lg fw-bolder">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- showcase section -->
+  <section class="container flex-column flex-lg-row d-flex mt-5 mb-5 pt-5">
+    <div class="col-lg-6 pt-5 mb-5">
+      <h1 class="sc-sec-heading pt-5">
+        It's About <br> Time
+      </h1>
+      <div>
+        <p class="text-muted fw-normal mb-3 pt-4 fs-5">
+          Play the hit action-strategy adventure where you <br> meet, greet, and defeat legions of hilarious zombies
+          <br> from the dawn of time, to the end of days.
+        </p>
+      </div>
+      <div class="d-flex flex-column flex-lg-row align-items-center">
+        <a href="https://play.google.com/store/apps/details?id=com.ea.game.pvz2_row&hl=en">
+          <img src="/assets/Google.png" alt="GooglePlay" width="200px" />
+        </a>
+        <a href="https://apps.apple.com/us/app/plants-vs-zombies-2/id597986893">
+          <img src="/assets/AppStore.png" alt="GooglePlay" width="200px" />
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-6 d-flex justify-content-center">
+      <div class="circle-1 mb-5">
+        <i class="fa-solid fa-xmark x-class fs-4"></i>
+        <img src="/assets/zombie-phone.png" width="300px" class="phone-class" />
+        <i class="fa-solid fa-circle dot-class"></i>
+      </div>
+    </div>
+  </section>
+  <!-- section 2 -->
+  <section class="testimonial-sec row justify-content-center mt-5 px-5 pt-5 pb-5">
+    <div class="text-center fw-normal col-lg-8">
+      <h1>
+        "Discover hundreds of plants and zombies."
+      </h1>
+    </div>
+    <div class="col-lg-5 d-flex justify-content-center pt-4">
+      <img src="/assets/logo-zombie.png" width="150px" />
+    </div>
+  </section>
+  <!-- Features section -->
+  <section id="features" class="container flex-column flex-lg-row d-flex align-items-center mt-5 mb-5 pt-5">
+    <div class="col-lg-4 d-flex justify-content-center">
+      <div class="circle-2 mb-5">
+        <i class="fa-solid fa-xmark x-class fs-4"></i>
+        <img src="/assets/zombie-phone.png" width="280px" class="phone-class-2" />
+        <i class="fa-solid fa-circle dot-class"></i>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="row gx-5 mt-5 row-cols-md-2 text-center">
+        <div class="col mb-5">
+          <div class="mb-3">
+            <img src="/assets/tree-ico.png" width="70px" />
+          </div>
+          <h5 class="fw-bold fw-5">New Plants</h5>
+          <p>
+            New plants that will add <br> strength to your defense
+        </div>
+        <div class="col mb-5">
+          <div class="mb-3">
+            <img src="/assets/camera.png" width="70px" />
+          </div>
+          <h5 class="fw-bold fw-5">Thymed Event</h5>
+          <p>
+            Track events capture benefits
+          </p>
+        </div>
+        <div class="col mb-5">
+          <div class="mb-3">
+            <img src="/assets/gift.png" width="70px" />
+          </div>
+          <h5 class="fw-bold fw-5">New Arena</h5>
+          <p>
+            Summer Championship <br> Mangofier Season
+          </p>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <img src="/assets/check.png" width="70px" />
+          </div>
+          <h5 class="fw-bold fw-5">Misc.</h5>
+          <p>
+            A strange mutation has <br>afflicted several plants.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- New Age section -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="row gx-5 justify-content-center justify-content-lg-between align-items-center pt-5 py-5">
+        <div class="col-12 col-lg-5">
+          <h2 class="na-sec-heading">Defend your garden with new plants</h2>
+          <p class="text-muted fw-normal mb-5 mb-lg-0">
+            Collect your favorite lawn legends, like Sunflower and Peashooter, along with hundreds of other
+            horticultural hotshots, including creative bloomers like Lava Guava and Laser Bean. Go toe-to-missing-toe
+            with a massive array of zombies at every turn, like Jetpack Zombie and Mermaid Imp – you’ll even have to
+            protect your brain from rampant Zombie Chickens!
+          </p>
+        </div>
+        <div class="col-lg-6 mt-5 my-5">
+          <img class="img-fluid rounded-circle" src="/assets/zombie-bg.jpg" width="1000px" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Stop Waiting section -->
+  <section class="" id="download">
+    <img src="/assets/unnamed-bg.png" class="img-fluid full-screen-img" alt="..." width="800">
+    <div class="cws-content">
+      <div class="container-free p-4 pt-xl-3">
+        <a class="btn btn-outline-dark py-3 px-4 rounded-pill" href="/index.html" target="_blank">Download for free</a>
+      </div>
+    </div>
+  </section>
+  <!-- Get the app section -->
+  <section class="testimonial-sec">
+    <div class="container pt-4 pb-5">
+      <h2 class="text-center text-black font-alt mb-3 mt-5">
+        Get the app now!
+      </h2>
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+        <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/AppStore.png" width="200px" /></a>
+        <a href="#!"><img class="app-badge" src="assets/Google.png" width="200px" /></a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black text-center py-5">
+    <div class="container px-5">
+      <div class="text-white-50 small">
+        <div class="mb-2">&copy; Berat Güdelek 2024. All Rights Reserved.</div>
+        <a class="footer-kvkk text-white-50" href="/">Privacy</a>
+        <span class="mx-1">&middot;</span>
+        <a class="footer-kvkk text-white-50" href="/">Terms</a>
+        <span class="mx-1">&middot;</span>
+        <a class="footer-kvkk text-white-50" href="/">FAQ</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
